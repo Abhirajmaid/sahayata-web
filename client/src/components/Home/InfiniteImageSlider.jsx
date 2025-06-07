@@ -9,7 +9,7 @@ const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 const shuffle = (arr) => [...arr].sort(() => 0.5 - Math.random());
 
 const ImageCard = ({ img }) => (
-  <div className="!w-[400px] !h-[350px] px-1">
+  <div className="w-[80vw] h-[70vw] max-w-[400px] max-h-[350px] min-w-[180px] min-h-[120px] sm:w-[260px] sm:h-[180px] md:w-[320px] md:h-[220px] lg:w-[400px] lg:h-[350px] px-1">
     <img
       src={img}
       alt="sahayata"

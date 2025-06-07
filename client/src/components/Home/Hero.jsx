@@ -6,21 +6,21 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-8 py-[70px] ">
+      <div className="flex flex-col justify-center items-center gap-8 py-10 sm:py-14 md:py-20">
         <div>
-          <div className="p-2 px-5 font-semibold text-sm bg-secondary text-white rounded-full font-montserrat">
+          <div className="p-2 px-4 sm:px-5 font-semibold text-xs sm:text-sm bg-secondary text-white rounded-full font-montserrat text-center">
             Join us in our mission to nourish lives, empower communities, and
             spread kindness across Pune.
           </div>
         </div>
         <div>
-          <h1 className="text-hero text-8xl text-center leading-[1.1]">
+          <h1 className="text-hero text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-center leading-tight md:leading-[1.1]">
             Feeding Mankind,
             <br /> with Love.
           </h1>
         </div>
         <div>
-          <p className="!text-black text-lg font-medium w-[60%] mx-auto text-center ">
+          <p className="!text-black text-base sm:text-lg font-medium w-[95%] sm:w-[80%] md:w-[60%] mx-auto text-center">
             “The smallest act of kindness is worth more than the grandest
             intention.” <br />
             <span className="text-brand-primary font-semibold">
@@ -28,15 +28,15 @@ const Hero = () => {
             </span>
           </p>
         </div>
-        <div className="flex gap-4 items-center justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <Link href="/volunteer">
-            <button className="btn-border uppercase">
+            <button className="btn-border uppercase w-full sm:w-auto">
               Join as Volunteer
               <Icon icon="tabler:arrow-right" width="24" height="24" />
             </button>
           </Link>
           <Link href="/donate">
-            <button className="btn-primary uppercase">
+            <button className="btn-primary uppercase w-full sm:w-auto">
               Donate for a Cause
               <Icon icon="tabler:arrow-right" width="24" height="24" />
             </button>

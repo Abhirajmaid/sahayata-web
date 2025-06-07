@@ -51,7 +51,7 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center py-8">
+    <div className="w-full flex flex-col items-center py-6 sm:py-8">
       <div
         className="w-full overflow-x-auto scrollbar-hide"
         ref={sliderRef}
@@ -59,16 +59,16 @@ const Team = () => {
         aria-label="Instagram posts slider"
         style={{ whiteSpace: "nowrap" }}
       >
-        <div className="flex gap-6 min-w-max px-2">
+        <div className="flex gap-4 sm:gap-6 min-w-max px-1 sm:px-2">
           {posts.map((src, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl shadow border border-brand-gray-light overflow-hidden max-w-xs w-[320px] min-w-[260px] flex-shrink-0"
+              className="bg-white rounded-xl shadow border border-brand-gray-light overflow-hidden max-w-[90vw] sm:max-w-xs w-[80vw] sm:w-[320px] min-w-[220px] sm:min-w-[260px] flex-shrink-0"
             >
               <iframe
                 src={src}
                 title={`Instagram post ${idx + 1}`}
-                className="w-full aspect-[4/5] min-h-[600px] border-0"
+                className="w-full aspect-[4/5] min-h-[350px] sm:min-h-[600px] border-0"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 loading="lazy"
                 // Instagram embeds require sandbox for reels
@@ -78,7 +78,7 @@ const Team = () => {
           ))}
         </div>
       </div>
-      <div className="mt-8">
+      <div className="mt-6 sm:mt-8">
         <a
           href="https://www.instagram.com/_sahayata_/"
           target="_blank"
