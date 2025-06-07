@@ -20,7 +20,7 @@ export const metadata = {
       "Join us in our mission to provide food, education, and healthcare to those in need.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Sahayata Foundation",
